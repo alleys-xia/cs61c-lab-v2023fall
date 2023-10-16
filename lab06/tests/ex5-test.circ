@@ -118,6 +118,10 @@
       <a name="label" val="num"/>
       <a name="width" val="32"/>
     </comp>
+    <comp lib="0" loc="(600,480)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="clk"/>
+    </comp>
     <comp lib="0" loc="(70,210)" name="Tunnel">
       <a name="label" val="clk"/>
     </comp>
@@ -192,6 +196,9 @@ c8 c9 0 f 11 5 a 2462423
     <wire from="(50,210)" to="(70,210)"/>
     <wire from="(50,40)" to="(60,40)"/>
     <wire from="(600,440)" to="(620,440)"/>
+    <wire from="(600,480)" to="(610,480)"/>
+    <wire from="(610,460)" to="(610,480)"/>
+    <wire from="(610,460)" to="(620,460)"/>
     <wire from="(840,440)" to="(880,440)"/>
     <wire from="(840,460)" to="(880,460)"/>
     <wire from="(840,480)" to="(880,480)"/>
