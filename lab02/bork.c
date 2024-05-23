@@ -74,5 +74,6 @@ int main(int argc, char*argv[]) {
     printf("Input string: \"%s\"\n", src_str.data);
     printf("Length of translated string: %d\n", dest_str.len);
     printf("Translate to Bork: \"%s\"\n", dest_str.data);
+    free_Str(src_str);
     return 0;
 }
