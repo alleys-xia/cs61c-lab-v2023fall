@@ -11,7 +11,6 @@ struct Course *make_course(int id, char *name) {
     struct Course *new_course = malloc(sizeof(struct Course));
     new_course->id = id;
     new_course->name = name;
-
     return new_course;
 }
 int main() {
