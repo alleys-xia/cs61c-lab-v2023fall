@@ -58,7 +58,7 @@ bool check_lower(const char *password) {
 /* Returns true if PASSWORD contains at least one number, false otherwise */
 bool check_number(const char *password) {
     while (*password != '\0') {
-        if (check_range(*password, 0, 9)) {
+        if (check_range(*password, '0', '9')) {
             return true;
         }
         ++password;
