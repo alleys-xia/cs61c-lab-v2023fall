@@ -3,3 +3,39 @@
 # Lines starting with # are comments, feel free to add any to document your commands
 
 # Please add your commands below this line
+#Q: Start your program the first line in main.Hint: this command should set a breakpoint at line 1 and begin running the program.
+#start
+
+#Q: The first line in main is a call to printf. We do not want to step into this function. Step over this line in the program.
+#next
+
+#Q: Step until the program is on the check_password call. Note that the line with an arrow next to it is the line we're currently on, but has not been executed yet.
+#next
+
+#Q: Step into check_password.
+#step
+
+#Q: Step into check_lower.
+#step
+
+#Q: Print the value of password (password is a string).
+#print password
+
+#Q: Step out of check_lower immediately. Do not step until the function returns.
+#finish
+
+#Q: Step into check_length.
+#step
+
+#Q: Step to the last line of the function.
+#next
+
+#Q: Print the return value of the function. The return value should be false.
+#print meets_len_req
+
+#Q: Print the value of length. It looks like length was correct, so there must be some logic issue on line 24.
+#print length
+
+#Q: Quit CGDB
+#quit
+
