@@ -79,7 +79,7 @@ int vector_get(vector_t *v, size_t loc) {
      * Otherwise, return what is in the passed location.
      */
     /* YOUR CODE HERE */
-    if(v->size<loc)
+    if(loc>=size)
         return 0;
     return v->data[loc];
 }
@@ -101,8 +101,8 @@ void vector_set(vector_t *v, size_t loc, int value) {
     /* realloc 函数的行为是这样的：
     * 如果 realloc 成功，它会分配一块新的内存，并将旧内存的数据复制到新内存中。然后，它会释放旧的内存块，并返回指向新内存块的指针。
     * 如果 realloc 失败，它会返回 NULL，旧内存块保持不变，不会被释放。 */
-    if(loc<v->size) {
-        int* temp= realloc(v->data, sizeof(int)*loc);
+    if(loc>=v->size) {
+        int* temp= realloc(v->data, sizeof(int)*(loc+1));
         //分配失败时，释放原先的内存并退出
         if(temp==NULL) {
             free(v->data);
@@ -110,9 +110,10 @@ void vector_set(vector_t *v, size_t loc, int value) {
         }
         v->data= temp;
         //set 0
-        for(size_t i=size;i<=loc;++i) {
+        for(size_t i=v->size;i<=loc;++i) {
             v->data[i]= 0;
         }
+        v->size= loc+1;
     }
     v->data[loc]= value;
 }
