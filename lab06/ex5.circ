@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project source="3.8.0-61c.fcfeffb" version="1.0">
-  This file is intended to be loaded by Logisim-evolution v3.8.0-61c.fcfeffb(https://github.com/61c-teach/logisim-evolution).
+<project source="3.8.0-61c.966ca7a" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.8.0-61c.966ca7a(https://github.com/61c-teach/logisim-evolution).
 
   <lib desc="#Wiring" name="0">
     <tool name="Splitter">
@@ -108,7 +108,6 @@
     </comp>
     <comp lib="0" loc="(210,400)" name="Splitter">
       <a name="appear" val="center"/>
-      <a name="bit1" val="none"/>
       <a name="bit10" val="1"/>
       <a name="bit11" val="1"/>
       <a name="bit12" val="1"/>
@@ -119,7 +118,7 @@
       <a name="bit17" val="1"/>
       <a name="bit18" val="1"/>
       <a name="bit19" val="1"/>
-      <a name="bit2" val="none"/>
+      <a name="bit2" val="1"/>
       <a name="bit20" val="1"/>
       <a name="bit21" val="1"/>
       <a name="bit22" val="1"/>
@@ -130,7 +129,7 @@
       <a name="bit27" val="1"/>
       <a name="bit28" val="1"/>
       <a name="bit29" val="1"/>
-      <a name="bit3" val="none"/>
+      <a name="bit3" val="1"/>
       <a name="bit30" val="1"/>
       <a name="bit31" val="1"/>
       <a name="bit4" val="1"/>
@@ -180,6 +179,7 @@
     </comp>
     <comp lib="0" loc="(210,610)" name="Splitter">
       <a name="appear" val="center"/>
+      <a name="bit0" val="1"/>
       <a name="bit10" val="0"/>
       <a name="bit11" val="0"/>
       <a name="bit12" val="0"/>
@@ -190,7 +190,7 @@
       <a name="bit17" val="0"/>
       <a name="bit18" val="0"/>
       <a name="bit19" val="0"/>
-      <a name="bit2" val="0"/>
+      <a name="bit2" val="1"/>
       <a name="bit20" val="0"/>
       <a name="bit21" val="0"/>
       <a name="bit22" val="0"/>
@@ -213,16 +213,16 @@
       <a name="incoming" val="32"/>
       <a name="spacing" val="5"/>
     </comp>
+    <comp lib="0" loc="(280,200)" name="Tunnel">
+      <a name="label" val="bits_16"/>
+      <a name="width" val="32"/>
+    </comp>
     <comp lib="0" loc="(290,270)" name="Tunnel">
       <a name="label" val="num"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(290,350)" name="Tunnel">
       <a name="label" val="bit_zero"/>
-    </comp>
-    <comp lib="0" loc="(290,400)" name="Tunnel">
-      <a name="label" val="bits_16"/>
-      <a name="width" val="28"/>
     </comp>
     <comp lib="0" loc="(290,450)" name="Tunnel">
       <a name="label" val="bits_five"/>
@@ -234,16 +234,16 @@
     </comp>
     <comp lib="0" loc="(290,560)" name="Tunnel">
       <a name="label" val="ten_rest_zero"/>
-      <a name="width" val="30"/>
+      <a name="width" val="28"/>
     </comp>
     <comp lib="0" loc="(290,610)" name="Tunnel">
       <a name="label" val="bits_ten"/>
-      <a name="width" val="2"/>
+      <a name="width" val="4"/>
     </comp>
-    <comp lib="0" loc="(540,300)" name="Constant">
+    <comp lib="0" loc="(540,300)" name="Constant"/>
+    <comp lib="0" loc="(540,370)" name="Constant">
       <a name="value" val="0x0"/>
     </comp>
-    <comp lib="0" loc="(540,370)" name="Constant"/>
     <comp lib="0" loc="(540,450)" name="Constant">
       <a name="value" val="0x0"/>
       <a name="width" val="32"/>
@@ -261,12 +261,12 @@
     <comp lib="0" loc="(540,790)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="bits_ten"/>
-      <a name="width" val="2"/>
+      <a name="width" val="4"/>
     </comp>
     <comp lib="0" loc="(540,870)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="ten_rest_zero"/>
-      <a name="width" val="30"/>
+      <a name="width" val="28"/>
     </comp>
     <comp lib="0" loc="(550,270)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -284,14 +284,14 @@
     <comp lib="0" loc="(550,500)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="bits_16"/>
-      <a name="width" val="28"/>
+      <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(550,540)" name="Constant">
-      <a name="value" val="0x0"/>
-      <a name="width" val="28"/>
+      <a name="value" val="0x10"/>
+      <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(550,660)" name="Constant">
-      <a name="value" val="0x7"/>
+      <a name="value" val="0x5"/>
       <a name="width" val="3"/>
     </comp>
     <comp lib="0" loc="(550,740)" name="Constant">
@@ -299,12 +299,12 @@
       <a name="width" val="29"/>
     </comp>
     <comp lib="0" loc="(550,820)" name="Constant">
-      <a name="value" val="0x3"/>
-      <a name="width" val="2"/>
+      <a name="value" val="0xa"/>
+      <a name="width" val="4"/>
     </comp>
     <comp lib="0" loc="(550,900)" name="Constant">
       <a name="value" val="0x0"/>
-      <a name="width" val="30"/>
+      <a name="width" val="28"/>
     </comp>
     <comp lib="0" loc="(670,280)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -324,7 +324,7 @@
       <a name="label" val="is_zero"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="0" loc="(670,520)" name="Pin">
+    <comp lib="0" loc="(670,500)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
       <a name="label" val="greater_than_sixteen"/>
@@ -349,7 +349,7 @@
       <a name="width" val="32"/>
     </comp>
     <comp lib="3" loc="(620,510)" name="Comparator">
-      <a name="width" val="28"/>
+      <a name="width" val="32"/>
     </comp>
     <comp lib="3" loc="(620,640)" name="Comparator">
       <a name="width" val="3"/>
@@ -358,21 +358,23 @@
       <a name="width" val="29"/>
     </comp>
     <comp lib="3" loc="(620,800)" name="Comparator">
-      <a name="width" val="2"/>
+      <a name="width" val="4"/>
     </comp>
     <comp lib="3" loc="(620,880)" name="Comparator">
-      <a name="width" val="30"/>
+      <a name="width" val="28"/>
     </comp>
     <wire from="(170,400)" to="(210,400)"/>
     <wire from="(170,500)" to="(210,500)"/>
     <wire from="(170,610)" to="(210,610)"/>
-    <wire from="(180,270)" to="(290,270)"/>
+    <wire from="(180,270)" to="(240,270)"/>
     <wire from="(230,350)" to="(290,350)"/>
-    <wire from="(230,400)" to="(290,400)"/>
     <wire from="(230,450)" to="(290,450)"/>
     <wire from="(230,500)" to="(290,500)"/>
     <wire from="(230,560)" to="(290,560)"/>
     <wire from="(230,610)" to="(290,610)"/>
+    <wire from="(240,200)" to="(240,270)"/>
+    <wire from="(240,200)" to="(280,200)"/>
+    <wire from="(240,270)" to="(290,270)"/>
     <wire from="(540,300)" to="(560,300)"/>
     <wire from="(540,370)" to="(560,370)"/>
     <wire from="(540,450)" to="(560,450)"/>
@@ -408,7 +410,7 @@
     <wire from="(620,280)" to="(670,280)"/>
     <wire from="(620,350)" to="(670,350)"/>
     <wire from="(620,420)" to="(670,420)"/>
-    <wire from="(620,520)" to="(670,520)"/>
+    <wire from="(620,500)" to="(670,500)"/>
     <wire from="(620,640)" to="(650,640)"/>
     <wire from="(620,720)" to="(650,720)"/>
     <wire from="(620,800)" to="(650,800)"/>
